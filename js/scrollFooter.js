@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     //Изменение положения
     container.style.transform = `translateY(${Math.max(
       0,
-      scrollPosition * 0.8 - 2400
+      scrollPosition * 0.8 - 3100
     )}px)`;
   });
 });
