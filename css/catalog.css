@@ -1,0 +1,76 @@
+body {
+  background-color: #000000;
+}
+
+h1 {
+  font-family: "Oi", cursive;
+  font-weight: 10;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(128, 139, 150, 0.598),
+    rgba(99, 99, 117, 0.404)
+  );
+  padding: 30px;
+  padding-top: 40px;
+  margin: auto;
+  margin-top: 40px;
+  border-radius: 10px;
+  width: 1300px;
+  position: relative;
+}
+
+.product-container {
+  position: relative;
+  width: 280px;
+  height: auto;
+  padding-bottom: 10px;
+  background-color: #ccc;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.product-img {
+  overflow: hidden;
+  width: 280px;
+  height: 380px;
+  border-radius: 10px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.caption {
+  font-family: "Vollkorn SC", sans-serif;
+  font-size: 20px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.caption-price {
+  font-family: "Vollkorn SC", sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+p {
+  color: white;
+}
+
+#content {
+  padding: 20px;
+}
+
+.dynamic-content {
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+  color: white;
+  margin: 10px;
+}
