@@ -46,8 +46,21 @@ h1 {
 }
 
 #back-back {
+  display: flex;
+
   background-color: rgba(128, 139, 150, 0.678);
   border-radius: 10px 10px 0 0;
+}
+
+#back-back {
+  position: relative;
+  align-items: center;
+  text-decoration: none;
+}
+
+#back-back p {
+  position: absolute;
+  left: 25%;
 }
 
 .text-way {
@@ -65,7 +78,14 @@ h1 {
 #sort {
   padding-top: 50px;
   text-align: center;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(128, 139, 150, 0.678),
+    rgba(128, 139, 150, 0.114)
+  );
+  height: min-content;
 }
+
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -75,7 +95,6 @@ h1 {
     rgba(128, 139, 150, 0.678),
     rgba(128, 139, 150, 0.114)
   );
-  border-radius: 10px;
   width: auto;
   position: relative;
   padding: 50px;
@@ -132,16 +151,6 @@ p {
   margin: 10px;
 }
 
-#sort {
-  border-radius: 10px;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(128, 139, 150, 0.678),
-    rgba(128, 139, 150, 0.114)
-  );
-  height: min-content;
-}
-
 input {
   font-family: "Vollkorn SC", sans-serif;
   font-size: 20px;
@@ -176,8 +185,21 @@ button {
   margin-bottom: 60px;
   font-family: "Vollkorn SC", sans-serif;
   font-size: 14px;
+  color: white;
 }
 
 button:hover {
   background-color: rgba(211, 81, 100, 0.7);
+}
+
+.product-container:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(255, 0, 0, 0), rgba(255, 0, 13, 0.2));
+  border-radius: 10px;
+  z-index: 1;
 }
