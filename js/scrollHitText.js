@@ -3,12 +3,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   window.addEventListener("scroll", function () {
     let scrollPosition = window.scrollY;
-
-    if (scrollPosition <= 1730) {
+    console.log(scrollPosition);
+    if (scrollPosition <= 2500) {
       //Изменение положения
       parallaxText.style.transform = `translateY(${Math.max(
         0,
-        scrollPosition * 0.9 - 1395
+        scrollPosition * 0.2 - 400
       )}px)`;
 
       //Изменение цвета

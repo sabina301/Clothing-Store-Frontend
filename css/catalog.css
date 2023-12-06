@@ -5,27 +5,79 @@ body {
 h1 {
   font-family: "Oi", cursive;
   font-weight: 10;
-  color: white;
+  color: rgba(128, 139, 150, 0.678);
   font-size: 40px;
   text-align: center;
-  margin-bottom: 80px;
+  margin-top: 100px;
 }
 
+#cloth {
+  font-family: "Oi", cursive;
+  font-weight: 10;
+  color: rgb(211, 81, 101);
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: -50px;
+}
+
+#main-content {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 60px 1fr;
+  gap: 20px;
+}
+
+#way {
+  position: relative;
+  background-color: rgba(128, 139, 150, 0.678);
+  margin: 0;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  padding-left: 20px;
+}
+
+#back {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+}
+
+#back-back {
+  background-color: rgba(128, 139, 150, 0.678);
+  border-radius: 10px 10px 0 0;
+}
+
+.text-way {
+  font-family: "Vollkorn SC", sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  margin: 15px;
+}
+
+#way a:nth-child(2) {
+  margin-left: 50%;
+}
+
+#sort {
+  padding-top: 50px;
+  text-align: center;
+}
 .container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   background-image: linear-gradient(
     to bottom,
-    rgba(128, 139, 150, 0.598),
-    rgba(99, 99, 117, 0.404)
+    rgba(128, 139, 150, 0.678),
+    rgba(128, 139, 150, 0.114)
   );
-  padding: 30px;
-  padding-top: 40px;
-  margin: auto;
-  margin-top: 40px;
   border-radius: 10px;
-  width: 1300px;
+  width: auto;
   position: relative;
+  padding: 50px;
 }
 
 .product-container {
@@ -33,7 +85,11 @@ h1 {
   width: 280px;
   height: auto;
   padding-bottom: 10px;
-  background-color: #ccc;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(95, 105, 116, 0.678),
+    rgba(191, 197, 204, 0.903)
+  );
   border-radius: 10px;
   margin: 20px;
 }
@@ -73,4 +129,54 @@ p {
   transition: opacity 0.5s, transform 0.5s;
   color: white;
   margin: 10px;
+}
+
+#sort {
+  border-radius: 10px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(128, 139, 150, 0.678),
+    rgba(128, 139, 150, 0.114)
+  );
+  height: min-content;
+}
+
+input {
+  font-family: "Vollkorn SC", sans-serif;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: rgb(128, 139, 150);
+  margin-top: 5px;
+  margin-bottom: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+input:focus {
+  border-color: rgb(0, 0, 0);
+  box-shadow: 0 0 5px rgb(0, 0, 0);
+}
+p {
+  font-family: "Vollkorn SC", sans-serif;
+  font-size: 18px;
+  margin: 0;
+}
+
+button {
+  background-color: rgb(211, 81, 101);
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  min-width: 140px;
+  margin-top: 10px;
+  margin-bottom: 60px;
+  font-family: "Vollkorn SC", sans-serif;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: rgba(211, 81, 100, 0.7);
 }

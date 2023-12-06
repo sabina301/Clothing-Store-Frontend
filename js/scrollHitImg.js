@@ -15,7 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
       let distanceFromTop2 = product.offsetTop - window.innerHeight;
       let opacity2 =
         (scrollPosition - distanceFromTop2) / (window.innerHeight / 2) / 5 -
-        0.6;
+        0.85;
+      console.log(opacity2);
       product.style.opacity = Math.max(0, opacity2);
     });
   });

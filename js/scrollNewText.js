@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
     if (scrollPosition <= 890) {
       //Изменение положения
       parallaxText.style.transform = `translateY(${Math.max(
-        100,
-        scrollPosition * 0.7 - 350
+        0,
+        scrollPosition * 0.1 + 100
       )}px)`;
 
       //Изменение цвета

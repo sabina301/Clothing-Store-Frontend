@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     products.forEach((product) => {
       let distanceFromTop = product.offsetTop - window.innerHeight;
       let opacity =
-        0.7 -
+        0.9 -
         (1.5 -
           (scrollPosition - distanceFromTop) / (window.innerHeight / 2) / 3);
 
