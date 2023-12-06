@@ -1,0 +1,96 @@
+body {
+  background-color: #000000;
+}
+
+form {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(128, 139, 150, 0.598),
+    rgba(99, 99, 117, 0.166)
+  );
+  padding: 20px;
+  padding-top: 40px;
+  margin: auto;
+  margin-top: 120px;
+  border-radius: 10px;
+  width: 400px;
+  backdrop-filter: blur(10px);
+}
+
+fieldset {
+  border: none;
+  border-radius: 5%;
+  font-size: 20px;
+  font-family: "Vollkorn SC", serif;
+}
+
+legend {
+  font-family: "Oi", cursive;
+  font-weight: 10;
+  font-size: 40px;
+  color: rgb(255, 240, 243);
+  text-align: center;
+}
+
+p {
+  color: white;
+}
+
+.input_value {
+  font-size: 17px;
+  font-family: "Vollkorn SC", serif;
+  border: none;
+  border-radius: 5px;
+  background-color: #dabcc662;
+  padding: 15px;
+  width: auto;
+  outline: none;
+  box-shadow: 0 5px 15px rgba(192, 109, 109, 0.436);
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  font-size: 17px;
+  font-family: "Vollkorn SC", serif;
+  padding: 13px 20px;
+  background-color: rgb(222, 124, 139);
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(192, 109, 109, 0.436);
+  text-align: center;
+}
+
+input[type="submit"]:hover {
+  background-color: rgba(222, 124, 139, 0.734);
+}
+
+.container {
+  text-align: center;
+}
+
+.input_value::placeholder {
+  color: #ffffff;
+}
+
+.button {
+  font-size: 17px;
+  font-family: "Vollkorn SC", serif;
+  display: inline-block;
+  padding: 13px 20px;
+  color: rgba(255, 255, 255, 0.674);
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.button:hover {
+  color: #ffffff6f;
+}
+
+.button:focus {
+  color: rgba(252, 252, 252, 0.164);
+}
+
+#button-g:disabled {
+  background-color: rgba(236, 82, 128, 0.29);
+}

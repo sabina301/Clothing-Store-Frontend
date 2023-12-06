@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="/css/registration.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Oi&family=Orbitron:wght@800&family=Raleway:ital,wght@0,200;1,200;1,500;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vollkorn+SC:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <form action="" method="get">
+      <fieldset>
+        <h1>Регистрация</h1>
+        <div class="grid-container">
+          <p>
+            <input
+              placeholder="Ваше имя"
+              class="input_value1"
+              type="text"
+              name="name"
+              id="name"
+              required
+            />
+          </p>
+          <p>
+            <input
+              placeholder="Ваш email"
+              class="input_value2"
+              type="email"
+              name="email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              required
+            />
+          </p>
+          <p>
+            <input
+              class="input_value3"
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Ваш пароль"
+              required
+            />
+          </p>
+          <p class="p-submit">
+            <label for="submit"></label>
+            <input type="submit" name="submit" class="submit" required />
+          </p>
+          <a href="/html/login.html" class="button"
+            >Уже зарегистрированы? <br />Войдите</a
+          >
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

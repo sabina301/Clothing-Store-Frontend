@@ -5,7 +5,7 @@ body {
 h1 {
   font-family: "Oi", cursive;
   font-weight: 10;
-  color: rgba(128, 139, 150, 0.678);
+  color: rgb(255, 255, 255);
   font-size: 40px;
   text-align: center;
   margin-top: 100px;
@@ -18,7 +18,7 @@ h1 {
   font-size: 50px;
   text-align: center;
   margin-bottom: 20px;
-  margin-top: -50px;
+  margin-top: -60px;
 }
 
 #main-content {
@@ -42,6 +42,7 @@ h1 {
   width: 50px;
   height: 50px;
   margin: 5px;
+  filter: invert(1);
 }
 
 #back-back {
