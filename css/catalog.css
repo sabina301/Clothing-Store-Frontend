@@ -32,7 +32,7 @@ h1 {
 
 #way {
   position: relative;
-  background-color: rgba(128, 139, 150, 0.678);
+  background-color: rgb(128, 139, 150);
   margin: 0;
   border-radius: 10px 10px 0 0;
   display: flex;
@@ -49,7 +49,7 @@ h1 {
 #back-back {
   display: flex;
 
-  background-color: rgba(128, 139, 150, 0.678);
+  background-color: rgb(128, 139, 150);
   border-radius: 10px 10px 0 0;
 }
 
@@ -81,7 +81,7 @@ h1 {
   text-align: center;
   background-image: linear-gradient(
     to bottom,
-    rgba(128, 139, 150, 0.678),
+    rgb(128, 139, 150),
     rgba(128, 139, 150, 0.114)
   );
   height: min-content;
@@ -93,7 +93,7 @@ h1 {
   justify-content: center;
   background-image: linear-gradient(
     to bottom,
-    rgba(128, 139, 150, 0.678),
+    rgb(128, 139, 150),
     rgba(128, 139, 150, 0.114)
   );
   width: auto;
@@ -108,7 +108,7 @@ h1 {
   padding-bottom: 10px;
   background-image: linear-gradient(
     to bottom,
-    rgba(95, 105, 116, 0.678),
+    rgba(128, 139, 150, 0.678),
     rgba(191, 197, 204, 0.903)
   );
   border-radius: 10px;
@@ -159,8 +159,8 @@ input {
   border: none;
   border-radius: 5px;
   outline: none;
-  background-color: #dabcc662;
-  box-shadow: 0 5px 15px rgba(192, 109, 109, 0.436);
+  background-color: rgba(171, 180, 189, 0.678);
+
   margin-top: 5px;
   margin-bottom: 20px;
   margin-left: 25px;
@@ -204,4 +204,68 @@ button:hover {
   background: linear-gradient(rgba(255, 0, 0, 0), rgba(255, 0, 13, 0.2));
   border-radius: 10px;
   z-index: 1;
+}
+
+@media (max-width: 1000px) {
+  #main-content {
+    grid-template-columns: 1fr;
+  }
+
+  #sort {
+    background-color: rgba(128, 139, 150, 0.482);
+  }
+
+  .container {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(128, 139, 150, 0.482),
+      rgba(128, 139, 150, 0.114)
+    );
+  }
+  #ok {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1000px) {
+  #main-content {
+    grid-template-columns: 1fr;
+  }
+
+  #sort {
+    background-color: rgba(128, 139, 150, 0.482);
+  }
+
+  .container {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(128, 139, 150, 0.482),
+      rgba(128, 139, 150, 0.114)
+    );
+  }
+  #ok {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+@media (max-width: 420px) {
+  #main-content {
+    margin: 4%;
+    grid-template-columns: 350px;
+  }
+}
+
+@media (max-width: 350px) {
+  #main-content {
+    margin: 4%;
+    grid-template-columns: 300px;
+  }
+  input {
+    width: 200px;
+  }
 }

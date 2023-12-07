@@ -28,6 +28,20 @@
   </head>
   <body>
     <header>
+      <div class="menu-toggle">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li><a href="/html/catalog.html">Женщинам</a></li>
+          <li><a href="/html/catalog.html">Мужчинам</a></li>
+          <li><a href="/html/profile.html">Профиль</a></li>
+          <li><a href="/html/cart.html">Корзина</a></li>
+        </ul>
+      </nav>
+
       <div class="shop-head">
         <h1 class="shop-name">everyday lifestyle</h1>
         <div class="login-block">
@@ -69,37 +83,13 @@
 
     <main>
       <section class="main-section">
-        <div class="parallax-container">
-          <div class="parallax-text" id="parallaxNewText">Новинки</div>
-        </div>
-
+        <div class="text">Новинки</div>
         <div id="new-container"></div>
       </section>
 
       <section class="main-section2">
-        <div class="parallax-container2">
-          <div class="parallax-text" id="parallaxHitText">Хиты</div>
-        </div>
-
+        <div class="text">Хиты</div>
         <div id="hit-container"></div>
-
-        <div class="block-email">
-          <div class="block2">
-            <div class="back-address">
-              <div class="block-text">
-                <p>Наши</p>
-                <p>магазины</p>
-                <a href="">Адреса на карте</a>
-              </div>
-            </div>
-            <p class="p-quantity">4</p>
-            <p class="p-description">розничных магазина</p>
-            <p class="p-quantity">2</p>
-            <p class="p-description">города</p>
-            <p class="p-quantity">5</p>
-            <p class="p-description">лет с вами</p>
-          </div>
-        </div>
         <div class="back-text">
           <div class="block-text">
             <p>
@@ -167,13 +157,7 @@
       </div>
     </div>
   </footer>
-  <script src="/js/truncate.js"></script>
-  <script src="/js/scrollNewText.js"></script>
-  <script src="/js/scrollHitText.js"></script>
-  <script src="/js/scrollNewImg.js"></script>
-  <script src="/js/scrollHitImg.js"></script>
   <script src="/js/newCatalog.js"></script>
   <script src="/js/hitCatalog.js"></script>
-  <script src="/js/scrollFooter.js"></script>
-  <script src="/js/scrollBg.js"></script>
+  <script src="/js/burger.js"></script>
 </html>

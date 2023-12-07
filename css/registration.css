@@ -5,16 +5,15 @@ body {
 form {
   background-image: linear-gradient(
     to bottom,
-    rgba(128, 139, 150, 0.598),
-    rgba(99, 99, 117, 0.16)
+    rgb(128, 139, 150),
+    rgba(128, 139, 150, 0.111)
   );
   padding: 20px;
   padding-top: 40px;
-  padding-bottom: 0px;
   margin: auto;
   margin-top: 120px;
   border-radius: 10px;
-  width: 35%;
+  width: 480px;
   backdrop-filter: blur(10px);
 }
 
@@ -23,8 +22,6 @@ fieldset {
   border-radius: 5%;
   font-size: 20px;
   font-family: "Vollkorn SC", serif;
-  padding-bottom: 80px;
-  padding-top: 20px;
 }
 
 h1 {
@@ -47,7 +44,7 @@ p {
   font-family: "Vollkorn SC", serif;
   border: none;
   border-radius: 5px;
-  background-color: #dabcc662;
+  background-color: rgb(128, 139, 150);
   padding: 15px;
   width: auto;
   outline: none;
@@ -56,13 +53,13 @@ p {
   grid-column: 1/2;
   margin-left: 10px;
   margin-right: 10px;
-  color: white; /* Цвет текста в обычном состоянии */
+  color: white;
 }
 
 .input_value1::placeholder,
 .input_value2::placeholder,
 .input_value3::placeholder {
-  color: #ffffff; /* Цвет placeholder */
+  color: #ffffff;
 }
 
 .submit {
@@ -118,4 +115,22 @@ p {
 
 form {
   margin-bottom: 100px;
+}
+
+@media (max-width: 570px) {
+  form {
+    width: 100%;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 27px;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 350px) {
+  h1 {
+    font-size: 23px;
+  }
 }
