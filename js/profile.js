@@ -14,6 +14,34 @@ let buyItems = [
   { image: "/img/cl5.jpg", name: "Куртка", price: 2000 },
 ];
 
+let user = {
+  username: "Сабина",
+  email: "szholobovaaa@gmail.com",
+  avatar: "/img/avatar.jfif",
+};
+
+function displayUser(userInfo) {
+  let nameContainer = document.getElementById("name-container");
+
+  let name = document.createElement("p");
+  name.textContent = userInfo.username;
+  name.id = "name";
+
+  let email = document.createElement("p");
+  email.textContent = userInfo.email;
+  email.id = "email";
+
+  nameContainer.appendChild(name);
+  nameContainer.appendChild(email);
+
+  let avatarContainer = document.getElementById("avatar-container");
+
+  let avatar = document.createElement("img");
+  avatar.src = userInfo.avatar;
+
+  avatarContainer.appendChild(avatar);
+}
+
 function displayOrderItem(orderItems) {
   let orderContainer = document.getElementById("order");
   orderContainer.id = "order";
@@ -52,3 +80,4 @@ function displayBuyItem(buyItems) {
 
 displayOrderItem(orderItems);
 displayBuyItem(buyItems);
+displayUser(user);

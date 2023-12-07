@@ -41,12 +41,14 @@ h1 {
 p {
   color: white;
 }
+
 #name {
   font-size: 38px;
   font-family: "Vollkorn SC", serif;
   margin-top: 12%;
   line-height: 80%;
 }
+
 #email {
   font-family: "Vollkorn SC", serif;
   margin-top: -20px;
