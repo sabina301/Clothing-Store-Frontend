@@ -27,6 +27,7 @@ h1 {
   grid-template-columns: 1fr 5fr;
   grid-template-rows: 60px 1fr;
   gap: 20px;
+  grid-row-gap: 5px;
 }
 
 #way {
@@ -158,7 +159,8 @@ input {
   border: none;
   border-radius: 5px;
   outline: none;
-  background-color: rgb(128, 139, 150);
+  background-color: #dabcc662;
+  box-shadow: 0 5px 15px rgba(192, 109, 109, 0.436);
   margin-top: 5px;
   margin-bottom: 20px;
   margin-left: 25px;

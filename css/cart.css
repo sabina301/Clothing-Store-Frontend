@@ -139,7 +139,7 @@ button:hover {
   position: absolute;
   width: 30px;
   height: 30px;
-  right: 40px;
+  right: 55px;
   top: calc(50% - 35px);
 }
 
@@ -207,11 +207,6 @@ button:hover {
   color: rgb(255, 255, 255);
   font-size: 19px;
   margin-top: 45px;
-}
-
-#back {
-  height: 50px;
-  width: 50px;
 }
 
 h1 {

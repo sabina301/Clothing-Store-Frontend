@@ -28,25 +28,6 @@ function displayCartItems() {
     itemPrice.classList.add("inscriptions-text");
     totalSumm += item[3];
 
-    //LIKE
-    let likeContainer = document.createElement("div");
-    likeContainer.classList.add("like-container");
-
-    let background = document.createElement("div");
-    background.classList.add("background");
-
-    let like = document.createElement("img");
-    like.classList.add("like");
-    like.src = "../img/single-heart.png";
-
-    background.addEventListener("click", function () {
-      if (background.style.backgroundColor == "pink") {
-        background.style.backgroundColor = "white";
-      } else {
-        background.style.backgroundColor = "pink";
-      }
-    });
-
     //CROSS
     let crossContainer = document.createElement("div");
     crossContainer.classList.add("cross-container");
@@ -129,9 +110,6 @@ function displayCartItems() {
     inscriptions.appendChild(itemSize);
     inscriptions.appendChild(itemPrice);
 
-    background.appendChild(like);
-    likeContainer.appendChild(background);
-
     background2.appendChild(cross);
     crossContainer.appendChild(background2);
 
@@ -144,7 +122,6 @@ function displayCartItems() {
 
     productContainer.appendChild(itemImg);
     productContainer.appendChild(inscriptions);
-    productContainer.appendChild(likeContainer);
     productContainer.appendChild(crossContainer);
     productContainer.appendChild(counterContainer);
     cartContainer.appendChild(productContainer);
