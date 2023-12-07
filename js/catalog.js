@@ -59,6 +59,9 @@ function displayCatalogItems(items) {
     productContainer.appendChild(itemName);
     productContainer.appendChild(itemPrice);
     catalogContainer.appendChild(productContainer);
+    productContainer.addEventListener("click", function () {
+      window.location.href = "product.html";
+    });
   });
   catalogItemNow = items;
 }
