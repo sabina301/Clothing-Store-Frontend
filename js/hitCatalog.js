@@ -1,8 +1,8 @@
 let catalogItemHit = [
-  { image: "/img/cl5.jpg", name: "Куртка", price: 5100 },
-  { image: "/img/cl6.jpg", name: "Кофта", price: 2000 },
-  { image: "/img/cl7.jpg", name: "Футболка", price: 900 },
-  { image: "/img/cl8.jpg", name: "Куртка", price: 2000 },
+  { image: "img/cl5.jpg", name: "Куртка", price: 5100 },
+  { image: "img/cl6.jpg", name: "Кофта", price: 2000 },
+  { image: "img/cl7.jpg", name: "Футболка", price: 900 },
+  { image: "img/cl8.jpg", name: "Куртка", price: 2000 },
 ];
 
 let catalogItemNowHit = [];

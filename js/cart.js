@@ -1,7 +1,7 @@
 let cartItem = [
-  ["/img/cl7.jpg", "Куртка", "44", 5100],
-  ["/img/cl5.jpg", "Кофта", "46", 2000],
-  ["/img/cl8.jpg", "Футболка", "44", 900],
+  ["img/cl7.jpg", "Куртка", "44", 5100],
+  ["img/cl5.jpg", "Кофта", "46", 2000],
+  ["img/cl8.jpg", "Футболка", "44", 900],
 ];
 let summa = document.createElement("p");
 summa.classList.add("summa");
@@ -37,7 +37,7 @@ function displayCartItems() {
 
     let cross = document.createElement("img");
     cross.classList.add("cross");
-    cross.src = "../img/cross.png";
+    cross.src = "img/cross.png";
 
     crossContainer.addEventListener("click", function () {
       let index = Array.from(this.parentNode.parentNode.children).indexOf(
@@ -65,11 +65,11 @@ function displayCartItems() {
     plusContainer.classList.add("plus-container");
 
     let minus = document.createElement("img");
-    minus.src = "../img/minus.png";
+    minus.src = "img/minus.png";
     minus.classList.add("minus");
 
     let plus = document.createElement("img");
-    plus.src = "../img/cross.png";
+    plus.src = "img/cross.png";
     plus.classList.add("plus");
 
     let num = document.createElement("p");

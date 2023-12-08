@@ -545,7 +545,7 @@ p {
   grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 100px;
   justify-content: center;
-  background-image: url("/img/store.png");
+  background-image: url("img/store.png");
   align-items: center;
 }
 
