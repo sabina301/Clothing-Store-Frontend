@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profile</title>
-    <link rel="stylesheet" href="/css/profile.css" />
+    <title>Cart</title>
+    <link rel="stylesheet" href="/css/cart.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,27 +26,22 @@
     />
   </head>
   <body>
-    <div id="back-back">
-      <a href="/html/index.html">
-        <img id="back" src="/img/back.png" alt="" />
-      </a>
-    </div>
-    <h1 id="your">Ваш</h1>
-    <h1 id="profile">Профиль</h1>
-    <div id="main-container">
-      <div class="grid-container">
-        <div id="avatar-container"></div>
-        <div id="name-container"></div>
-        <div id="order">
-          <p>Ваши текущие заказы</p>
-        </div>
-        <div id="buy">
-          <p>Ваши покупки</p>
-        </div>
-        <button>Выйти</button>
-        <div id="image-container"></div>
+    <main>
+      <div id="back-back">
+        <a href="index.html">
+          <img id="back" src="/img/back.png" alt="" />
+        </a>
       </div>
-    </div>
-    <script src="/js/profile.js"></script>
+
+      <section>
+        <h1 id="your">Ваша</h1>
+        <h1 id="cart">Корзина</h1>
+        <div class="container">
+          <div class="cont"></div>
+          <button>Оформить заказ</button>
+        </div>
+      </section>
+    </main>
   </body>
+  <script src="/js/cart.js"></script>
 </html>

@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Registration</title>
-    <link rel="stylesheet" href="/css/registration.css" />
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/login.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,33 +26,24 @@
     />
   </head>
   <body>
-    <form action="" method="post">
+    <script src="/script/capcha.js"></script>
+    <form action="" method="get">
       <fieldset>
-        <h1>Регистрация</h1>
-        <div class="grid-container">
+        <legend>Вход</legend>
+        <div class="container">
           <p>
             <input
-              placeholder="Ваше имя"
-              class="input_value1"
-              type="text"
-              name="name"
-              id="name"
-              required
-            />
-          </p>
-          <p>
-            <input
-              placeholder="Ваш email"
-              class="input_value2"
+              class="input_value"
               type="email"
               name="email"
               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
               required
+              placeholder="Ваша почта"
             />
           </p>
           <p>
             <input
-              class="input_value3"
+              class="input_value"
               type="password"
               name="password"
               id="password"
@@ -60,12 +51,11 @@
               required
             />
           </p>
-          <p class="p-submit">
-            <label for="submit"></label>
-            <input type="submit" name="submit" class="submit" required />
+          <p>
+            <input type="submit" id="button-g" />
           </p>
-          <a href="/html/login.html" class="button"
-            >Уже зарегистрированы? <br />Войдите</a
+          <a href="registration.html" class="button"
+            >Нет аккаунта? Зарегистрируйтесь</a
           >
         </div>
       </fieldset>

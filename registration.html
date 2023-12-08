@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
-    <link rel="stylesheet" href="/css/login.css" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="/css/registration.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,24 +26,33 @@
     />
   </head>
   <body>
-    <script src="/script/capcha.js"></script>
-    <form action="" method="get">
+    <form action="" method="post">
       <fieldset>
-        <legend>Вход</legend>
-        <div class="container">
+        <h1>Регистрация</h1>
+        <div class="grid-container">
           <p>
             <input
-              class="input_value"
-              type="email"
-              name="email"
-              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              placeholder="Ваше имя"
+              class="input_value1"
+              type="text"
+              name="name"
+              id="name"
               required
-              placeholder="Ваша почта"
             />
           </p>
           <p>
             <input
-              class="input_value"
+              placeholder="Ваш email"
+              class="input_value2"
+              type="email"
+              name="email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              required
+            />
+          </p>
+          <p>
+            <input
+              class="input_value3"
               type="password"
               name="password"
               id="password"
@@ -51,11 +60,12 @@
               required
             />
           </p>
-          <p>
-            <input type="submit" id="button-g" />
+          <p class="p-submit">
+            <label for="submit"></label>
+            <input type="submit" name="submit" class="submit" required />
           </p>
-          <a href="/html/registration.html" class="button"
-            >Нет аккаунта? Зарегистрируйтесь</a
+          <a href="login.html" class="button"
+            >Уже зарегистрированы? <br />Войдите</a
           >
         </div>
       </fieldset>

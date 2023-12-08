@@ -11,6 +11,7 @@ let catalogItem = [
 
 let catalogItemNow = [];
 
+//Сортировка
 document.querySelector("button").addEventListener("click", function () {
   let minPrice = parseInt(document.querySelector("input:nth-of-type(1)").value);
   let maxPrice = parseInt(document.querySelector("input:nth-of-type(2)").value);
